@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail & Dadi</title>
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- link mio stile -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body  class="bg-secondary-subtle">
+
+    <main>
+        <h1 class="text-center text-bg-dark text-light m-0 p-2">Sfida tra lancio di dadi</h1>
+        <div class="bg-danger-subtle row justify-content-center py-4">
+            <div class="col d-flex flex-column align-items-center">
+                <div class="d-flex gap-4 my-2">
+                    <div class="d-flex flex-column gap-1 align-items-center ">
+                        <h4>Dado 1</h4>
+                        <span id="dado1" class="bg-primary rounded p-2 text-center text-light fw-bold "></span>
+                    </div>
+                    <div class="d-flex flex-column gap-1 align-items-center ">
+                        <h4>Dado 2</h4>
+                        <span id="dado2" class="bg-primary rounded p-2 text-center text-light fw-bold "></span>
+                    </div>
+                </div>
+                <button id="buttonDado1" class="btn btn-danger fw-bold my-5">Lancia dadi</button>
+            </div>
+
+            <div id="risultato"></div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/main.js"></script>
+</body>
+</html>
