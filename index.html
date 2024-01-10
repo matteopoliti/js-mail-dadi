@@ -11,26 +11,46 @@
     <!-- link mio stile -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body  class="bg-secondary-subtle">
+<body  class="my_bg">
 
-    <main>
-        <h1 class="text-center text-bg-dark text-light m-0 p-2">Sfida tra lancio di dadi</h1>
-        <div class="bg-danger-subtle row justify-content-center py-4">
-            <div class="col d-flex flex-column align-items-center">
-                <div class="d-flex gap-4 my-2">
-                    <div class="d-flex flex-column gap-1 align-items-center ">
-                        <h4>Dado 1</h4>
-                        <span id="dado1" class="bg-primary rounded p-2 text-center text-light fw-bold "></span>
+    <main class="my_container">
+
+        <!-- Gioco dei dadi -->
+
+        <div class="container_dadi">
+            <h1 class="container_titolo text-center text-bg-dark text-light m-0 p-2">Sfida tra lancio di dadi</h1>
+            <div class="container_game bg-danger-subtle row justify-content-center py-4">
+                <div class="col d-flex flex-column align-items-center justify-content-center ">
+                    <div class="d-flex gap-4 my-2">
+                        <div class="d-flex flex-column gap-1 align-items-center">
+                            <h4>Dado 1</h4>
+                            <span id="dado1" class="bg-primary rounded p-2 text-center text-light fw-bold "></span>
+                        </div>
+                        <div class="d-flex flex-column gap-1 align-items-center ">
+                            <h4>Dado 2</h4>
+                            <span id="dado2" class="bg-primary rounded p-2 text-center text-light fw-bold "></span>
+                        </div>
                     </div>
-                    <div class="d-flex flex-column gap-1 align-items-center ">
-                        <h4>Dado 2</h4>
-                        <span id="dado2" class="bg-primary rounded p-2 text-center text-light fw-bold "></span>
-                    </div>
+                    <button id="buttonDado1" class="btn btn-danger fw-bold mt-4">Lancia dadi</button>
                 </div>
-                <button id="buttonDado1" class="btn btn-danger fw-bold my-5">Lancia dadi</button>
+    
+                <div id="risultato"></div>
             </div>
 
-            <div id="risultato"></div>
+        </div>
+
+        <!-- Mail -->
+        <div class="container_email bg-dark d-flex flex-column align-items-center p-2">
+            <label for="emailPostGame" class="form-label text-light">Scrivi qui la tua email per effettuare il Login</label>
+            <input type="email" class="form-control w-25 " id="emailPostGame" required>
+            <div class="d-flex gap-2 ">
+                <button id="buttonEmail" class="btn btn-light fw-bold my-5">Invia email</button>
+                <button id="ricaricaButton" class="btn btn-light fw-bold my-5">Riprova</button>
+            </div>
+            
+
+
+            <div id="risultatoLogin"></div>
         </div>
     </main>
 

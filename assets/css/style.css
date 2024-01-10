@@ -1,0 +1,27 @@
+.my_bg{
+    background-image: url(../img/dice-568059_1920.jpg);
+}
+
+.my_container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container_dadi{
+   height: 70vh;
+}
+
+.container_titolo{
+    height: 10vh;
+}
+
+.container_game{
+    height: 60vh;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container_email{
+    height: 30vh;
+}
+
